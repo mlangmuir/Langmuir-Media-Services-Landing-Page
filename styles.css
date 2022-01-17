@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat&family=Noto+Sans&display=swap');
+
+html,body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #919397;
+}
+
+#header {
+  background-color: #0b1e4f;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+#header-img {
+  height: 60px;
+  margin-top: 4px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#nav-bar {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: white;
+  opacity: 95%;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: grey;
+}
+
+#cover-photo-div {
+  padding-bottom: 500px;
+}
+
+#cover-photo {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+  position: absolute;
+  z-index: 1;
+}
+
+#cover-shade {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+  position: absolute;
+  background-color: black;
+  opacity: 65%;
+  z-index: 2;
+}
+
+#heading-1 {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  z-index: 3;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+}
+
+#heading-2 {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  z-index: 3;
+  font-family: "Montserrat";
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+#heading-3 {
+  width: 100%;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 50px;
+  z-index: 3;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+}
+
+#email {
+  width: 40%;
+  padding: 10px 0px;
+  position: relative;
+  z-index: 3;
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: black;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+a:link {
+  text-decoration: none!important;
+}
+  
+#email-submit {
+  width: 20%;
+  padding: 10px 0px;
+  position: relative;
+  z-index: 3;
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin: auto;
+  background-color: black;
+  cursor: pointer;
+}
+
+#email-submit:hover {
+  background-color: rgb(30,30,30);
+}
+
+#scroll-arrow {
+  height: 25px;
+  width: 25px;
+  border: 2px solid white;
+  position: relative;
+  margin: 0 auto;
+  z-index: 3;
+  cursor: pointer;
+  transform: rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-animation 2s infinite;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  50% {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  100% {
+    transform: rotate(45deg) (0px, 0px);
+  }
+}
+
+#services-section {
+  margin: auto;
+  max-width: 800px;
+  font-family: "Montserrat";
+  color: white;
+}
+
+#services-heading {
+  font-family: "Cabin";
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+.services-titles {
+  font-size: 26px;
+}
+
+.services-text {
+  font-size: 20px;
+  text-align: justify;
+}
+
+#web-dev-div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+#web-dev-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding-top: 15px;
+  padding-right: 60px;
+}
+
+#mobile-app-div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+#mobile-app-img {
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding-top: 15px;
+  padding-right: 60px;
+}
+
+#video-editing-div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+#video-editing-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 70px;
+}
+
+#photo-editing-div {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+  
+#photo-editing-img {
+  width: 150px;
+  height: 101px;
+  object-fit: cover;
+  padding-top: 15px;
+  padding-right: 60px;
+}
+
+#demo-text {
+  text-align: center;
+  font-size: 22px;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+#about-us-section {
+  margin: auto;
+  max-width: 800px;
+  font-family: "Montserrat";
+}
+
+#about-us-heading {
+  font-family: "Cabin";
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+#montreal-img {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  object-fit: cover;
+  opacity: 90%;
+  display: block;
+}
+
+#about-us-text {
+  margin: auto;
+  max-width: 800px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  text-align: justify;
+  line-height: 30px;
+  color: white;
+}
+
+.line {
+  max-width: 60%;
+  height: 0;
+  border-radius: 2px;
+  background-color: white;
+}
+
+#page-created {
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 625px) {
+  
+  #nav-bar {
+    display: none;
+  }
+  
+  .nav-link {
+    display: none;
+  }
+  
+  #video {
+    width: 400px;
+    height: 225px;
+  }
+  
+}
